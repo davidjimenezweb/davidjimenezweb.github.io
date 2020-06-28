@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@font-face {
+  font-family: 'apriText-black';
+  src: url("../fonts/inter/Inter-Black-slnt=0.ttf");
+}
+
+@font-face {
+  font-family: 'apriText-bold';
+  src: url("../fonts/inter/Inter-Bold-slnt=0.ttf");
+}
+
+@font-face {
+  font-family: 'apriText';
+  src: url("../fonts/inter/Inter-Regular-slnt=0.ttf");
+}
+
+@font-face {
+  font-family: 'apriText-light';
+  src: url("../fonts/inter/Inter-Light-slnt=0.ttf");
+}
+
+.apriButton {
+  background-color: #6C63FF;
+  -webkit-box-shadow: 0 2px 3px rgba(95, 88, 226, 0.3);
+          box-shadow: 0 2px 3px rgba(95, 88, 226, 0.3);
+}
+
+.apriButton:hover {
+  -webkit-box-shadow: 0 3px 6px rgba(95, 88, 226, 0.5);
+          box-shadow: 0 3px 6px rgba(95, 88, 226, 0.5);
+  background: #5F58E2;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input:focus, input.form-control:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+nav {
+  background: transparent;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+nav .apriMenu {
+  padding-top: 20px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .apriMenu .apriLogo {
+  display: inline-block;
+  font-family: 'Lato';
+  font-weight: bold;
+}
+
+nav .apriMenu .apriLogo .apriName {
+  display: block;
+  color: #FFFFFF;
+  font-size: 28px;
+}
+
+nav .apriMenu .apriLogo .apriName span {
+  color: #6C63FF;
+}
+
+nav .apriMenu .apriLogo .apriResponsive {
+  display: none;
+}
+
+nav .apriMenu .apriLogo .apriResponsive a img {
+  vertical-align: top;
+  height: 45px;
+}
+
+nav .apriMenu .apriLogo .apriResponsive button {
+  background: transparent;
+  border: 0;
+  font-size: 24px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+nav .apriLinksMenu {
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+nav .apriLinksMenu li {
+  display: inline-block;
+  padding: 20px 0 20px 30px;
+}
+
+nav .apriLinksMenu li a {
+  color: #DEDEDF;
+  font-family: 'apriText';
+  text-align: center;
+}
+
+nav .apriLinksMenu li a:hover {
+  color: #FFFFFF;
+}
+
+nav .apriLinksMenu li .apriButton {
+  border-radius: 8px;
+  color: #FFFFFF !important;
+  font-family: 'apriText-bold';
+  padding: 10px 20px;
+  -webkit-transition: .3s box-shadow,.3s background;
+  transition: .3s box-shadow,.3s background;
+}
+
+nav.scrolled {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 6px 28px -18px #b0b0b0;
+  box-shadow: 0px 6px 28px -18px #b0b0b0;
+}
+
+nav.scrolled .apriMenu {
+  padding-top: 0;
+}
+
+nav.scrolled .apriMenu .apriLogo .apriName {
+  color: #1E2022;
+}
+
+nav.scrolled .apriLinksMenu li a {
+  color: #697989 !important;
+}
+
+nav.scrolled .apriLinksMenu li a:hover {
+  color: #1E2022 !important;
+}
+
+nav.scrolled .apriLinksMenu li .apriButton {
+  color: #FFFFFF !important;
+}
+
+nav.scrolled .apriResponsive .apriName {
+  color: #1E2022 !important;
+}
+
+nav.scrolled .apriResponsive button {
+  color: #1E2022 !important;
+}
+
+nav.fixed {
+  position: fixed;
+}
+
+@media screen and (max-width: 991px) {
+  nav {
+    background: #323145;
+  }
+  nav .apriMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  nav .apriMenu .apriLogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0.7em;
+  }
+  nav .apriMenu .apriLogo .apriName {
+    display: none;
+  }
+  nav .apriMenu .apriLogo .apriResponsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  nav .apriMenu .apriLogo .apriResponsive .apriName {
+    display: block;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 6px;
+  }
+  nav .apriMenu .apriLogo .apriResponsive button {
+    margin-left: auto;
+    color: #FFFFFF;
+  }
+  nav .apriMenu .apriLinksMenu {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  nav .apriMenu .apriLinksMenu li {
+    padding: 20px 0 20px 0;
+  }
+  nav .apriMenu .apriLinksMenu li a {
+    padding: 15px 25px;
+    color: #FFFFFF;
+  }
+  nav .apriMenu .apriLinksMenu li a:last-child {
+    margin-top: 15px;
+  }
+}
+
+.body {
+  background: #323145;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.bg-active {
+  background-color: #FFFFFF;
+}
+
+#apriLanding {
+  /*background-image: url(../img/homepage/fondo.jpg);
+   background-size: cover;
+   background-position: center 0px;
+   background-repeat: no-repeat;*/
+}
+
+#apriLanding .apriStart {
+  height: 100vh;
+}
+
+#apriLanding .apriStart h2 {
+  font-weight: bold !important;
+  font-size: 56px !important;
+  color: #FFFFFF !important;
+  font-family: 'Lato';
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+#apriLanding .apriStart h2 span {
+  color: #6C63FF;
+}
+
+#apriLanding .apriStart h4 {
+  font-family: 'apriText';
+  font-size: 20px;
+  color: #DEDEDF;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+#apriLanding .apriStart a {
+  border-radius: 8px;
+  color: #FFFFFF !important;
+  font-family: 'apriText-bold';
+  padding: 15px 25px;
+  -webkit-transition: .3s box-shadow,.3s background;
+  transition: .3s box-shadow,.3s background;
+}
+
+@media screen and (max-width: 991px) {
+  #apriLanding .apriStart {
+    height: auto;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: auto;
+    width: 80%;
+  }
+  #apriLanding .apriStart img {
+    margin-top: 150px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #apriLanding .apriStart img {
+    margin-top: 170px;
+  }
+  #apriLanding .apriStart h2 {
+    font-weight: "Lato" !important;
+    font-size: 48px !important;
+    color: #FFFFFF !important;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  #apriLanding .apriStart {
+    height: auto;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  #apriLanding .apriStart img {
+    margin-top: 25px;
+  }
+  #apriLanding .apriStart h2 {
+    font-weight: "Lato" !important;
+    font-size: 48px !important;
+    color: #FFFFFF !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #apriLanding .apriStart img {
+    margin-top: 85px;
+  }
+  #apriLanding .apriStart h2 {
+    font-weight: "Lato" !important;
+    font-size: 36px !important;
+    color: #FFFFFF !important;
+    margin-top: 20px;
+  }
+  #apriLanding .apriStart h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #apriLanding .apriStart h2 {
+    font-weight: "Lato" !important;
+    font-size: 36px !important;
+    color: #FFFFFF !important;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #apriLanding .apriStart img {
+    margin-top: 55px;
+  }
+  #apriLanding .apriStart h2 {
+    font-weight: "Lato" !important;
+    font-size: 28px !important;
+    color: #FFFFFF !important;
+  }
+  #apriLanding .apriStart h4 {
+    font-size: 18px;
+  }
+}
+
+#apriLanding .mouse {
+  width: 35px;
+  height: 55px;
+  border: 2px solid #DEDEDF;
+  border-radius: 50px;
+  position: absolute;
+  top: 85%;
+  left: calc(50% - 17.5px);
+}
+
+#apriLanding .mouse::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #DEDEDF;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  border-radius: 50%;
+  -webkit-animation: scroll 1s infinite;
+  animation: scroll 1s infinite;
+}
+
+@media screen and (max-width: 991px) {
+  #apriLanding .mouse {
+    display: none;
+  }
+}
+
+@-webkit-keyframes scroll {
+  from {
+    opacity: 1;
+    top: 10px;
+  }
+  to {
+    opacity: 0;
+    top: 30px;
+  }
+}
+
+@keyframes scroll {
+  from {
+    opacity: 1;
+    top: 10px;
+  }
+  to {
+    opacity: 0;
+    top: 30px;
+  }
+}
+
+#apriMeet .apriMe {
+  height: 100vh;
+}
+
+#apriMeet .apriMe img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+#apriMeet .apriMe .apriInfo h2 {
+  font-weight: bold !important;
+  font-size: 36px !important;
+  color: #1E2022 !important;
+  font-size: 'Lato';
+  margin-bottom: 0;
+}
+
+#apriMeet .apriMe .apriInfo h2 span {
+  color: #6C63FF;
+}
+
+#apriMeet .apriMe .apriInfo h5 {
+  font-weight: normal !important;
+  font-size: 14px !important;
+  color: #697989 !important;
+  font-size: 'apriText';
+}
+
+#apriMeet .apriMe .apriInfo h5:after {
+  content: " ";
+  width: 110px;
+  height: 3.5px;
+  background: #6C63FF;
+  display: block;
+  margin: 20px 0;
+  border-radius: 3px;
+}
+
+#apriMeet .apriMe .apriInfo p {
+  color: #697989;
+  line-height: 2;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 991px) {
+  #apriMeet .apriMe {
+    height: auto;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: auto;
+    width: 80%;
+  }
+  #apriMeet .apriMe img {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 180px;
+  }
+  #apriMeet .apriMe .apriInfo h5:after {
+    content: " ";
+    width: 100px;
+    height: 3px;
+    background: #6C63FF;
+    display: block;
+    margin: 20px auto;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #apriMeet .apriMe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #apriMeet .apriMe .apriInfo h2 {
+    font-size: 28px !important;
+  }
+  #apriMeet .apriMe .apriInfo p {
+    font-size: 16px !important;
+    line-height: 1.8;
+  }
+}
+/*# sourceMappingURL=style.css.map */
