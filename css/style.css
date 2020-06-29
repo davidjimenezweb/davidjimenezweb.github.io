@@ -31,6 +31,47 @@
   background: #5F58E2;
 }
 
+.apriTitle {
+  margin-bottom: 40px;
+}
+
+.apriTitle h2 {
+  font-weight: bold !important;
+  font-size: 36px !important;
+  color: #1E2022 !important;
+}
+
+.apriTitle h2:after {
+  content: " ";
+  width: 110px;
+  height: 3.5px;
+  background: #6C63FF;
+  display: block;
+  margin: 20px 0 20px 0;
+  border-radius: 3px;
+}
+
+.apriTitle p {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #697989;
+}
+
+@media screen and (max-width: 992px) {
+  .apriTitle {
+    text-align: center;
+  }
+  .apriTitle h2:after {
+    content: " ";
+    width: 100px;
+    height: 3px;
+    background: #6C63FF;
+    display: block;
+    margin: 20px auto;
+    border-radius: 3px;
+  }
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -165,6 +206,10 @@ nav.scrolled .apriLinksMenu li .apriButton {
   color: #FFFFFF !important;
 }
 
+nav.scrolled .apriLinksMenu li .apriButton:hover {
+  color: #FFFFFF !important;
+}
+
 nav.scrolled .apriResponsive .apriName {
   color: #1E2022 !important;
 }
@@ -272,12 +317,12 @@ nav.fixed {
   color: #6C63FF;
 }
 
-#apriLanding .apriStart h4 {
+#apriLanding .apriStart p {
   font-family: 'apriText';
   font-size: 20px;
   color: #DEDEDF;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 #apriLanding .apriStart a {
@@ -289,7 +334,7 @@ nav.fixed {
   transition: .3s box-shadow,.3s background;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   #apriLanding .apriStart {
     height: auto;
     text-align: center;
@@ -309,13 +354,13 @@ nav.fixed {
   }
   #apriLanding .apriStart h2 {
     font-weight: "Lato" !important;
-    font-size: 48px !important;
+    font-size: 56px !important;
     color: #FFFFFF !important;
     margin-top: 25px;
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 650px) {
   #apriLanding .apriStart {
     height: auto;
     text-align: center;
@@ -343,7 +388,7 @@ nav.fixed {
     color: #FFFFFF !important;
     margin-top: 20px;
   }
-  #apriLanding .apriStart h4 {
+  #apriLanding .apriStart p {
     font-size: 20px;
   }
 }
@@ -365,7 +410,7 @@ nav.fixed {
     font-size: 28px !important;
     color: #FFFFFF !important;
   }
-  #apriLanding .apriStart h4 {
+  #apriLanding .apriStart p {
     font-size: 18px;
   }
 }
@@ -395,7 +440,7 @@ nav.fixed {
   animation: scroll 1s infinite;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   #apriLanding .mouse {
     display: none;
   }
@@ -423,65 +468,66 @@ nav.fixed {
   }
 }
 
-#apriMeet .apriMe {
-  height: 100vh;
+main #apriMeet {
+  padding-top: 200px;
+  padding-bottom: 100px;
 }
 
-#apriMeet .apriMe img {
+main #apriMeet .apriMe img {
   width: 50%;
   display: block;
   margin: auto;
 }
 
-#apriMeet .apriMe .apriInfo h2 {
+main #apriMeet .apriMe .apriInfo h2 {
   font-weight: bold !important;
   font-size: 36px !important;
   color: #1E2022 !important;
   font-size: 'Lato';
-  margin-bottom: 0;
+  margin-bottom: -5px;
 }
 
-#apriMeet .apriMe .apriInfo h2 span {
+main #apriMeet .apriMe .apriInfo h2 span {
   color: #6C63FF;
 }
 
-#apriMeet .apriMe .apriInfo h5 {
+main #apriMeet .apriMe .apriInfo small {
   font-weight: normal !important;
   font-size: 14px !important;
   color: #697989 !important;
   font-size: 'apriText';
 }
 
-#apriMeet .apriMe .apriInfo h5:after {
+main #apriMeet .apriMe .apriInfo small:after {
   content: " ";
   width: 110px;
   height: 3.5px;
   background: #6C63FF;
   display: block;
-  margin: 20px 0;
+  margin: 20px 0 20px 0;
   border-radius: 3px;
 }
 
-#apriMeet .apriMe .apriInfo p {
+main #apriMeet .apriMe .apriInfo p {
   color: #697989;
   line-height: 2;
   font-size: 18px;
 }
 
-@media screen and (max-width: 991px) {
-  #apriMeet .apriMe {
+@media screen and (max-width: 992px) {
+  main #apriMeet .apriMe {
     height: auto;
     text-align: center;
     padding-bottom: 60px;
     margin: auto;
     width: 80%;
   }
-  #apriMeet .apriMe img {
+  main #apriMeet .apriMe img {
     margin-top: 150px;
     margin-bottom: 50px;
     width: 180px;
   }
-  #apriMeet .apriMe .apriInfo h5:after {
+  main #apriMeet .apriMe .apriInfo small:after {
     content: " ";
     width: 100px;
     height: 3px;
@@ -493,18 +539,217 @@ nav.fixed {
 }
 
 @media screen and (max-width: 520px) {
-  #apriMeet .apriMe {
+  main #apriMeet .apriMe {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 340px) {
-  #apriMeet .apriMe .apriInfo h2 {
+  main #apriMeet .apriMe .apriInfo h2 {
     font-size: 28px !important;
   }
-  #apriMeet .apriMe .apriInfo p {
+  main #apriMeet .apriMe .apriInfo p {
     font-size: 16px !important;
     line-height: 1.8;
   }
+}
+
+@media screen and (max-width: 992px) {
+  main #apriMeet {
+    padding-bottom: 0;
+  }
+}
+
+main #apriSkills {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  main #apriSkills {
+    padding-bottom: 0;
+  }
+}
+
+main #apriSkills .apriSkills .apriSkill {
+  margin-bottom: 20px;
+}
+
+main #apriSkills .apriSkills .apriSkill p {
+  font-weight: normal !important;
+  font-size: 20px !important;
+  color: #697989 !important;
+  margin-bottom: 5px;
+}
+
+main #apriSkills .apriSkills .apriSkill p i {
+  color: #6C63FF;
+}
+
+main #apriSkills .apriSkills .apriSkill .progress {
+  background: #F2F2F2;
+  width: 100%;
+  height: 10px;
+  margin-bottom: 15px;
+}
+
+main #apriSkills .apriSkills .apriSkill .progress .progress-bar {
+  background: #6C63FF;
+}
+
+main #apriSkills .apriSkills h3 {
+  font-weight: bold !important;
+  font-size: 24px !important;
+  color: #1E2022 !important;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  main #apriSkills .apriSkills h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main #apriSkills .apriSkills {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #apriSkills .apriSkills {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  main #apriSkills .apriSkills {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main #apriSkills .apriImage {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main #apriSkills .apriImage {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main #apriSkills .apriImage {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  main #apriSkills .apriImage {
+    width: 100%;
+  }
+}
+
+main #apriPortfolio {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+main #apriPortfolio .apriPortfolio img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  main #apriPortfolio .apriPortfolio img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main #apriPortfolio .apriPortfolio img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  main #apriPortfolio .apriPortfolio img {
+    width: 100%;
+  }
+}
+
+main #apriPortfolio .apriPortfolio h3 {
+  font-weight: normal !important;
+  font-size: 20px !important;
+  color: #1E2022 !important;
+  text-align: center;
+  margin-top: 20px;
+}
+
+main #apriPortfolio .apriPortfolio h3 span {
+  color: #6C63FF;
+}
+
+footer .apriRrss {
+  background: #6C63FF;
+}
+
+footer .apriRrss h6 {
+  font-weight: normal !important;
+  font-size: 20px !important;
+  color: #FFFFFF !important;
+}
+
+footer .apriRrss a {
+  font-size: 24px;
+}
+
+footer .apriRrss a i {
+  color: #FFFFFF;
+}
+
+footer .apriLinksFooter {
+  background: #323145;
+  padding-top: 38px;
+}
+
+footer .apriLinksFooter h6 {
+  font-weight: bold !important;
+  font-size: 20px !important;
+  color: #FFFFFF !important;
+}
+
+footer .apriLinksFooter hr {
+  background: #6C63FF;
+  height: 2.8px;
+  border-radius: 3px;
+}
+
+footer .apriLinksFooter p {
+  font-size: 16px;
+  color: #DEDEDF;
+}
+
+footer .apriLinksFooter p a {
+  color: #DEDEDF;
+}
+
+footer .apriLinksFooter p a:hover {
+  color: #FFFFFF;
+}
+
+footer .apriCopy {
+  background: #262535;
+}
+
+footer .apriCopy a {
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
