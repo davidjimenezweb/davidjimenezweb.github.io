@@ -66,17 +66,17 @@
       <section id="apriMeet">
          <div class="container">
             <div class="apriMe row d-flex align-items-center">
-               <div class="col-lg-6 col-md-12">
+               <div class="col-lg-5 col-md-12">
                   <img src="img/homepage/user.svg" class="img-fluid wow fadeInUp">
                </div>
 
-               <div class="col-lg-6 col-md-12 apriInfo">
+               <div class="col-lg-7 col-md-12 apriInfo">
                   <h2 class="wow fadeInUp">Hola, soy <span>David.</span></h2>
                   <small class="wow fadeInUp">Diseñador web & desarrollador frontend</small>
 
-                  <p class="wow fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quam nulla,
-                     praesentium enim quisquam eaque dolorem quo autem aliquid odio fugit, dolores tempora unde
-                     quibusdam?</p>
+                  <p class="wow fadeInUp">Mi nombre es David, soy una persona activa, empática y que disfruta trabajando en equipo. Estoy constantemente buscando nuevos retos que me permitan crecer tanto a nivel personal como profesional, sintiendo una predilección notable por el mundo de la tecnología.</p>
+
+                  <p class="wow fadeInUp">Siempre estoy aprendiendo cosas nuevas y mejorando lo ya aprendido para poder implementarlo en mi trabajo y en mi vida diaria.</p>
                </div>
             </div>
          </div>
@@ -175,7 +175,7 @@
                      <div class="apriSkill wow fadeIn col-6">
                         <p><i class="fas fa-language"></i> Inglés</p>
                         <div class="progress">
-                           <div class="progress-bar" style="width: 70%"></div>
+                           <div class="progress-bar" style="width: 60%"></div>
                         </div>
                      </div>
 
@@ -200,13 +200,88 @@
       <section id="apriPortfolio">
          <div class="container">
             <div class="apriTitle">
-               <h2 class="wow fadeInUp">Mi <span>portfolio.</span></h2>
+               <h2 class="wow fadeInUp">Mi portfolio.</h2>
                <p class="wow fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sequi iure assumenda neque rerum, architecto sed nemo quidem sint ea itaque quam totam dolorum voluptas.</p>
             </div>
 
             <div class="apriPortfolio">
                <img src="img/mantenimiento.svg" class="img-fluid wow fadeIn">
-               <h3 class="wow fadeIn">Portfolio en <span>construcción</span>, disculpe las molestias.</h3>
+               <h3 class="wow fadeIn">Portfolio en construcción, disculpe las molestias.</h3>
+            </div>
+         </div>
+      </section>
+
+      <section id="apriContact">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-5">
+                  <div class="apriTitle">
+                     <h2 class="wow fadeInUp">Contacta conmigo.</h2>
+                     <p class="wow fadeInUp">Responderé a tu mensaje lo antes posible.</p>
+                  </div>
+                  
+                  <div class="apriData">
+                     <p class="wow fadeIn"><i class="fas fa-home mr-3"></i> Alicante - C. Valenciana, España</p>
+                     <p class="wow fadeIn"><i class="fas fa-envelope mr-3"></i> david@aprisoft.es</p>
+                     <p class="wow fadeIn"><i class="fas fa-phone mr-3"></i> + 34 676 83 56 83</p>
+                  </div>
+
+                  <img src="img/homepage/contact.svg" class="img-fluid wow fadeInUp">
+               </div>
+
+               <div class="offset-lg-1"></div>
+
+               <form class="col-lg-6 mt-lg-0 mt-5 z-depth-1-half" action="php/mail.php" enctype="multipart/form-data" method="post">
+                  <div class="text-center">
+                     <h5 class="wow fadeIn">Las marcadas con un * son obligatorias.</h5>
+                  </div>
+
+                  <div class="row">
+                     <div class="form-group md-outline col-md-6">
+                        <label for="nombre" class="sr-only">Nombre</label>
+                        <input name="nombre" id="nombre" class="form-control wow fadeIn" placeholder="Nombre*" type="text" required>
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="empresa" class="sr-only">Empresa</label>
+                        <input name="empresa" id="empresa" class="form-control wow fadeIn" placeholder="Empresa" type="text">
+                     </div>
+                  </div>
+
+                  <div class="row">
+                     <div class="form-group col-md-6">
+                        <label for="email" class="sr-only">Email</label>
+                        <input name="email" id="email" class="form-control wow fadeIn" placeholder="Email*" type="email" required>
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="telefono" class="sr-only">Teléfono</label>
+                        <input name="telefono" id="telefono" class="form-control wow fadeIn" placeholder="Teléfono" type="text">
+                     </div>
+                  </div>
+
+                  <div class="row">
+                     <div class="form-group col-md-6">
+                        <label for="ciudad" class="sr-only">Ciudad</label>
+                        <input name="ciudad" id="ciudad" class="form-control wow fadeIn" placeholder="Ciudad" type="text" required>
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="provincia" class="sr-only">Provincia</label>
+                        <input name="provincia" id="provincia" class="form-control wow fadeIn" placeholder="Provincia*" type="text" required>
+                     </div>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="mensaje" class="sr-only">Mensaje</label>
+                     <textarea name="mensaje" id="mensaje" cols="30" rows="4" class="form-control wow fadeIn" placeholder="Mensaje*" require></textarea>
+
+                     <p class="legal wow fadeIn">De acuerdo con lo establecido por la Ley Orgánica 15/1999, le informamos que los datos obtenidos de este formulario serán incorporados a un fichero automatizado bajo la responsabilidad de David Jiménez Águeda con la finalidad de atender sus consultas y remitirle información relacionada que pueda ser de su interés. Puede ejercer sus derechos de acceso, rectificación, cancelación y oposición mediante un escrito a mi dirección de correo electrónico DAVID@APRISOFT.ES. El envío de estos datos implica la aceptación de esta cláusula.</p>
+                  </div>
+
+                  <div class="g-recaptcha" data-sitekey="6LcOro8UAAAAAGpKmwD3RsjIWoBnyaVHy8GUSuyf"></div>
+
+                  <div class="text-center mt-5">
+                     <button type="submit" class="apriButton wow fadeIn" style="border: 0">Enviar mensaje</button>
+                  </div>
+               </form>
             </div>
          </div>
       </section>
@@ -234,7 +309,7 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-5 col-md-4 mx-auto mb-4">
-                  <h6>David Jiménez</h6>
+                  <h6>David Jiménez Águeda</h6>
                   <hr class="mt-1 mb-4 mt-0 d-inline-block mx-auto" style="width: 110px;">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laudantium officia, aliquid officiis dolorem explicabo soluta aperiam consectetur corrupti perferendis.</p>
                </div>
@@ -257,7 +332,7 @@
                   <h6>Contacto</h6>
                   <hr class="mt-1 mb-4 mt-0 d-inline-block mx-auto" style="width: 80px;">
                   <p><i class="fas fa-home mr-1"></i> Alicante - CV, España</p>
-                  <p><i class="fas fa-envelope mr-1"></i> DavidSoyYo7@outlook.com</p>
+                  <p><i class="fas fa-envelope mr-1"></i> david@aprisoft.es</p>
                   <p><i class="fas fa-phone mr-1"></i> + 34 676 83 56 83</p>
                </div>
             </div>

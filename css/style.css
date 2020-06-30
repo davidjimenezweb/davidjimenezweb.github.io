@@ -370,6 +370,7 @@ nav.fixed {
   }
   #apriLanding .apriStart img {
     margin-top: 25px;
+    width: 100%;
   }
   #apriLanding .apriStart h2 {
     font-weight: "Lato" !important;
@@ -660,6 +661,12 @@ main #apriPortfolio {
   padding-bottom: 100px;
 }
 
+@media screen and (max-width: 992px) {
+  main #apriPortfolio {
+    padding-bottom: 0;
+  }
+}
+
 main #apriPortfolio .apriPortfolio img {
   width: 50%;
   display: block;
@@ -693,8 +700,64 @@ main #apriPortfolio .apriPortfolio h3 {
   margin-top: 20px;
 }
 
-main #apriPortfolio .apriPortfolio h3 span {
+main #apriContact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #F7F7FC;
+}
+
+main #apriContact .apriData p {
+  font-weight: normal !important;
+  font-size: 20px !important;
+  color: #1E2022 !important;
+  margin-bottom: 25px;
+}
+
+main #apriContact .apriData p i {
   color: #6C63FF;
+  font-size: 24px;
+}
+
+main #apriContact form {
+  background: #FFFFFF;
+  padding: 25px 30px 40px 30px;
+  border-radius: 15px;
+}
+
+main #apriContact form h5 {
+  font-weight: normal !important;
+  font-size: 14px !important;
+  color: #1E2022 !important;
+  margin-bottom: 20px;
+}
+
+main #apriContact form .form-group .form-control {
+  border-radius: 15px;
+}
+
+main #apriContact form button {
+  border-radius: 8px;
+  color: #FFFFFF !important;
+  font-family: 'apriText-bold';
+  padding: 10px 25px;
+  -webkit-transition: .3s box-shadow,.3s background;
+  transition: .3s box-shadow,.3s background;
+}
+
+main #apriContact form p.legal {
+  margin-top: 11px;
+  font-size: 11px;
+  line-height: 10pt;
+  text-align: justify;
+  color: #697989;
+}
+
+@media screen and (max-width: 580px) {
+  main #apriContact form {
+    width: 95%;
+    display: block;
+    margin: auto;
+  }
 }
 
 footer .apriRrss {
