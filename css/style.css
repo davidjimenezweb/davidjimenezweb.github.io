@@ -661,12 +661,6 @@ main #apriPortfolio {
   padding-bottom: 100px;
 }
 
-@media screen and (max-width: 992px) {
-  main #apriPortfolio {
-    padding-bottom: 0;
-  }
-}
-
 main #apriPortfolio .apriPortfolio img {
   width: 50%;
   display: block;
