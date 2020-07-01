@@ -83,12 +83,14 @@ a:hover {
   text-decoration: none;
 }
 
-input:focus, input.form-control:focus {
-  outline: none !important;
-  outline-width: 0 !important;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
+.body {
+  background: #323145;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.bg-active {
+  background-color: #FFFFFF;
 }
 
 nav {
@@ -283,16 +285,6 @@ nav.fixed {
   }
 }
 
-.body {
-  background: #323145;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.bg-active {
-  background-color: #FFFFFF;
-}
-
 #apriLanding {
   /*background-image: url(../img/homepage/fondo.jpg);
    background-size: cover;
@@ -475,12 +467,21 @@ main #apriMeet {
 }
 
 main #apriMeet .apriMe img {
-  width: 50%;
+  border-radius: 100%;
+  width: 60%;
   display: block;
   margin: auto;
 }
 
-main #apriMeet .apriMe .apriInfo h2 {
+@media screen and (max-width: 992px) {
+  main #apriMeet .apriMe img {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 220px;
+  }
+}
+
+main #apriMeet .apriMe .apriInfo .title h2 {
   font-weight: bold !important;
   font-size: 36px !important;
   color: #1E2022 !important;
@@ -488,18 +489,18 @@ main #apriMeet .apriMe .apriInfo h2 {
   margin-bottom: -5px;
 }
 
-main #apriMeet .apriMe .apriInfo h2 span {
+main #apriMeet .apriMe .apriInfo .title h2 span {
   color: #6C63FF;
 }
 
-main #apriMeet .apriMe .apriInfo small {
+main #apriMeet .apriMe .apriInfo .title small {
   font-weight: normal !important;
   font-size: 14px !important;
   color: #697989 !important;
   font-size: 'apriText';
 }
 
-main #apriMeet .apriMe .apriInfo small:after {
+main #apriMeet .apriMe .apriInfo .title small:after {
   content: " ";
   width: 110px;
   height: 3.5px;
@@ -509,26 +510,11 @@ main #apriMeet .apriMe .apriInfo small:after {
   border-radius: 3px;
 }
 
-main #apriMeet .apriMe .apriInfo p {
-  color: #697989;
-  line-height: 2;
-  font-size: 18px;
-}
-
 @media screen and (max-width: 992px) {
-  main #apriMeet .apriMe {
-    height: auto;
+  main #apriMeet .apriMe .apriInfo .title {
     text-align: center;
-    padding-bottom: 60px;
-    margin: auto;
-    width: 80%;
   }
-  main #apriMeet .apriMe img {
-    margin-top: 150px;
-    margin-bottom: 50px;
-    width: 180px;
-  }
-  main #apriMeet .apriMe .apriInfo small:after {
+  main #apriMeet .apriMe .apriInfo .title small:after {
     content: " ";
     width: 100px;
     height: 3px;
@@ -539,19 +525,62 @@ main #apriMeet .apriMe .apriInfo p {
   }
 }
 
-@media screen and (max-width: 520px) {
-  main #apriMeet .apriMe {
-    width: 100%;
+main #apriMeet .apriMe .apriInfo p {
+  color: #697989;
+  font-size: 18px;
+}
+
+main #apriMeet .apriMe .apriInfo .apriHobbies h3 {
+  font-weight: bold !important;
+  font-size: 24px !important;
+  color: #1E2022 !important;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  main #apriMeet .apriMe .apriInfo .apriHobbies h3 {
+    text-align: center;
+  }
+}
+
+main #apriMeet .apriMe .apriInfo .apriHobbies p {
+  font-weight: normal !important;
+  font-size: 20px !important;
+  color: #697989 !important;
+}
+
+main #apriMeet .apriMe .apriInfo .apriHobbies p i {
+  color: #6C63FF;
+}
+
+@media screen and (max-width: 414px) {
+  main #apriMeet .apriMe .apriInfo .apriHobbies p {
+    font-size: 14px !important;
   }
 }
 
 @media screen and (max-width: 340px) {
-  main #apriMeet .apriMe .apriInfo h2 {
+  main #apriMeet .apriMe .apriInfo .title h2 {
     font-size: 28px !important;
   }
   main #apriMeet .apriMe .apriInfo p {
     font-size: 16px !important;
     line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main #apriMeet .apriMe {
+    height: auto;
+    padding-bottom: 60px;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  main #apriMeet .apriMe {
+    width: 100%;
   }
 }
 
@@ -564,6 +593,7 @@ main #apriMeet .apriMe .apriInfo p {
 main #apriSkills {
   padding-top: 100px;
   padding-bottom: 100px;
+  /* */
 }
 
 @media screen and (max-width: 992px) {
@@ -725,8 +755,26 @@ main #apriContact form h5 {
   margin-bottom: 20px;
 }
 
-main #apriContact form .form-group .form-control {
+main #apriContact form input,
+main #apriContact form input.form-control,
+main #apriContact form textarea.form-control {
   border-radius: 15px;
+}
+
+main #apriContact form input:focus,
+main #apriContact form input.form-control:focus,
+main #apriContact form textarea.form-control:focus {
+  border-color: #6C63FF;
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+main #apriContact form textarea.form-control {
+  min-height: 110px;
+  max-height: 200px;
 }
 
 main #apriContact form button {
