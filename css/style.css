@@ -285,6 +285,188 @@ nav.fixed {
   }
 }
 
+#apriNavbar-2 {
+  background: transparent;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+#apriNavbar-2 .apriMenu {
+  padding-top: 20px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#apriNavbar-2 .apriMenu .apriLogo {
+  display: inline-block;
+  font-family: 'Lato';
+  font-weight: bold;
+}
+
+#apriNavbar-2 .apriMenu .apriLogo .apriName {
+  display: block;
+  color: #1E2022;
+  font-size: 28px;
+}
+
+#apriNavbar-2 .apriMenu .apriLogo .apriName span {
+  color: #6C63FF;
+}
+
+#apriNavbar-2 .apriMenu .apriLogo .apriResponsive {
+  display: none;
+}
+
+#apriNavbar-2 .apriLinksMenu {
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#apriNavbar-2 .apriLinksMenu li {
+  display: inline-block;
+  padding: 20px 0 20px 30px;
+}
+
+#apriNavbar-2 .apriLinksMenu li .apriButton {
+  border-radius: 8px;
+  color: #FFFFFF !important;
+  font-family: 'apriText-bold';
+  padding: 12px 25px;
+  -webkit-transition: .3s box-shadow,.3s background;
+  transition: .3s box-shadow,.3s background;
+}
+
+@media screen and (max-width: 991px) {
+  #apriNavbar-2 .apriMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  #apriNavbar-2 .apriMenu .apriLogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0.7em;
+  }
+  #apriNavbar-2 .apriMenu .apriLogo .apriName {
+    display: none;
+  }
+  #apriNavbar-2 .apriMenu .apriLogo .apriResponsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  #apriNavbar-2 .apriMenu .apriLogo .apriResponsive .apriName {
+    display: block;
+    font-size: 24px;
+    margin-top: 6px;
+  }
+  #apriNavbar-2 .apriMenu .apriLogo .apriResponsive .apriButton {
+    border-radius: 8px;
+    color: #FFFFFF !important;
+    font-family: 'apriText-bold';
+    padding: 10px 20px;
+    -webkit-transition: .3s box-shadow,.3s background;
+    transition: .3s box-shadow,.3s background;
+  }
+  #apriNavbar-2 .apriMenu .apriLinksMenu {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #apriNavbar-2 .apriMenu .apriLinksMenu li {
+    padding: 20px 0 20px 0;
+  }
+  #apriNavbar-2 .apriMenu .apriLinksMenu li a {
+    padding: 15px 25px;
+  }
+  #apriNavbar-2 .apriMenu .apriLinksMenu li a:last-child {
+    margin-top: 15px;
+  }
+}
+
+footer .apriRrss {
+  background: #6C63FF;
+}
+
+footer .apriRrss h6 {
+  font-weight: normal !important;
+  font-size: 20px !important;
+  color: #FFFFFF !important;
+}
+
+footer .apriRrss a {
+  font-size: 24px;
+}
+
+footer .apriRrss a i {
+  color: #FFFFFF;
+}
+
+footer .apriLinksFooter {
+  background: #323145;
+  padding-top: 38px;
+}
+
+footer .apriLinksFooter h6 {
+  font-weight: bold !important;
+  font-size: 20px !important;
+  color: #FFFFFF !important;
+}
+
+footer .apriLinksFooter hr {
+  background: #6C63FF;
+  height: 2.8px;
+  border-radius: 3px;
+}
+
+footer .apriLinksFooter p {
+  font-size: 16px;
+  color: #DEDEDF;
+}
+
+footer .apriLinksFooter p a {
+  color: #DEDEDF;
+}
+
+footer .apriLinksFooter p a:hover {
+  color: #FFFFFF;
+}
+
+footer .apriCopy {
+  background: #262535;
+}
+
+footer .apriCopy a {
+  font-weight: bold;
+}
+
 #apriLanding {
   /*background-image: url(../img/homepage/fondo.jpg);
    background-size: cover;
@@ -310,9 +492,10 @@ nav.fixed {
 }
 
 #apriLanding .apriStart p {
+  font-weight: normal !important;
+  font-size: 20px !important;
+  color: #DEDEDF !important;
   font-family: 'apriText';
-  font-size: 20px;
-  color: #DEDEDF;
   line-height: 1.5;
   margin-bottom: 40px;
 }
@@ -466,6 +649,12 @@ main #apriMeet {
   padding-bottom: 100px;
 }
 
+@media screen and (max-width: 992px) {
+  main #apriMeet {
+    padding-bottom: 0;
+  }
+}
+
 main #apriMeet .apriMe img {
   border-radius: 100%;
   width: 60%;
@@ -553,12 +742,6 @@ main #apriMeet .apriMe .apriInfo .apriHobbies p i {
   color: #6C63FF;
 }
 
-@media screen and (max-width: 414px) {
-  main #apriMeet .apriMe .apriInfo .apriHobbies p {
-    font-size: 14px !important;
-  }
-}
-
 @media screen and (max-width: 340px) {
   main #apriMeet .apriMe .apriInfo .title h2 {
     font-size: 28px !important;
@@ -584,51 +767,46 @@ main #apriMeet .apriMe .apriInfo .apriHobbies p i {
   }
 }
 
-@media screen and (max-width: 992px) {
-  main #apriMeet {
-    padding-bottom: 0;
-  }
-}
-
-main #apriSkills {
+main #habilidades {
   padding-top: 100px;
   padding-bottom: 100px;
   /* */
 }
 
 @media screen and (max-width: 992px) {
-  main #apriSkills {
+  main #habilidades {
+    padding-top: 50px;
     padding-bottom: 0;
   }
 }
 
-main #apriSkills .apriSkills .apriSkill {
+main #habilidades .apriSkills .apriSkill {
   margin-bottom: 20px;
 }
 
-main #apriSkills .apriSkills .apriSkill p {
+main #habilidades .apriSkills .apriSkill p {
   font-weight: normal !important;
   font-size: 20px !important;
   color: #697989 !important;
   margin-bottom: 5px;
 }
 
-main #apriSkills .apriSkills .apriSkill p i {
+main #habilidades .apriSkills .apriSkill p i {
   color: #6C63FF;
 }
 
-main #apriSkills .apriSkills .apriSkill .progress {
+main #habilidades .apriSkills .apriSkill .progress {
   background: #F2F2F2;
   width: 100%;
   height: 10px;
   margin-bottom: 15px;
 }
 
-main #apriSkills .apriSkills .apriSkill .progress .progress-bar {
+main #habilidades .apriSkills .apriSkill .progress .progress-bar {
   background: #6C63FF;
 }
 
-main #apriSkills .apriSkills h3 {
+main #habilidades .apriSkills h3 {
   font-weight: bold !important;
   font-size: 24px !important;
   color: #1E2022 !important;
@@ -636,32 +814,32 @@ main #apriSkills .apriSkills h3 {
 }
 
 @media screen and (max-width: 992px) {
-  main #apriSkills .apriSkills h3 {
+  main #habilidades .apriSkills h3 {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 992px) {
-  main #apriSkills .apriSkills {
+  main #habilidades .apriSkills {
     width: 80%;
     margin: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
-  main #apriSkills .apriSkills {
+  main #habilidades .apriSkills {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 580px) {
-  main #apriSkills .apriSkills {
+  main #habilidades .apriSkills {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 992px) {
-  main #apriSkills .apriImage {
+  main #habilidades .apriImage {
     width: 70%;
     margin: auto;
     margin-bottom: 60px;
@@ -669,29 +847,29 @@ main #apriSkills .apriSkills h3 {
 }
 
 @media screen and (max-width: 500px) {
-  main #apriSkills .apriImage {
+  main #habilidades .apriImage {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  main #apriSkills .apriImage {
+  main #habilidades .apriImage {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 414px) {
-  main #apriSkills .apriImage {
+  main #habilidades .apriImage {
     width: 100%;
   }
 }
 
-main #apriPortfolio {
+main #portfolio {
   padding-top: 70px;
   padding-bottom: 100px;
 }
 
-main #apriPortfolio .apriPortfolio img {
+main #portfolio .apriPortfolio img {
   width: 50%;
   display: block;
   margin: auto;
@@ -699,24 +877,24 @@ main #apriPortfolio .apriPortfolio img {
 }
 
 @media screen and (max-width: 768px) {
-  main #apriPortfolio .apriPortfolio img {
+  main #portfolio .apriPortfolio img {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  main #apriPortfolio .apriPortfolio img {
+  main #portfolio .apriPortfolio img {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 414px) {
-  main #apriPortfolio .apriPortfolio img {
+  main #portfolio .apriPortfolio img {
     width: 100%;
   }
 }
 
-main #apriPortfolio .apriPortfolio h3 {
+main #portfolio .apriPortfolio h3 {
   font-weight: normal !important;
   font-size: 20px !important;
   color: #1E2022 !important;
@@ -724,46 +902,46 @@ main #apriPortfolio .apriPortfolio h3 {
   margin-top: 20px;
 }
 
-main #apriContact {
+main #contacto {
   padding-top: 100px;
   padding-bottom: 100px;
   background: #F7F7FC;
 }
 
-main #apriContact .apriData p {
+main #contacto .apriData p {
   font-weight: normal !important;
   font-size: 20px !important;
   color: #1E2022 !important;
   margin-bottom: 25px;
 }
 
-main #apriContact .apriData p i {
+main #contacto .apriData p i {
   color: #6C63FF;
   font-size: 24px;
 }
 
-main #apriContact form {
+main #contacto form {
   background: #FFFFFF;
   padding: 25px 30px 40px 30px;
   border-radius: 15px;
 }
 
-main #apriContact form h5 {
+main #contacto form h5 {
   font-weight: normal !important;
   font-size: 14px !important;
   color: #1E2022 !important;
   margin-bottom: 20px;
 }
 
-main #apriContact form input,
-main #apriContact form input.form-control,
-main #apriContact form textarea.form-control {
+main #contacto form input,
+main #contacto form input.form-control,
+main #contacto form textarea.form-control {
   border-radius: 15px;
 }
 
-main #apriContact form input:focus,
-main #apriContact form input.form-control:focus,
-main #apriContact form textarea.form-control:focus {
+main #contacto form input:focus,
+main #contacto form input.form-control:focus,
+main #contacto form textarea.form-control:focus {
   border-color: #6C63FF;
   outline: none !important;
   outline-width: 0 !important;
@@ -772,12 +950,12 @@ main #apriContact form textarea.form-control:focus {
   -webkit-box-shadow: none;
 }
 
-main #apriContact form textarea.form-control {
+main #contacto form textarea.form-control {
   min-height: 110px;
   max-height: 200px;
 }
 
-main #apriContact form button {
+main #contacto form button {
   border-radius: 8px;
   color: #FFFFFF !important;
   font-family: 'apriText-bold';
@@ -786,7 +964,7 @@ main #apriContact form button {
   transition: .3s box-shadow,.3s background;
 }
 
-main #apriContact form p.legal {
+main #contacto form p.legal {
   margin-top: 11px;
   font-size: 11px;
   line-height: 10pt;
@@ -795,66 +973,101 @@ main #apriContact form p.legal {
 }
 
 @media screen and (max-width: 580px) {
-  main #apriContact form {
+  main #contacto form {
     width: 95%;
     display: block;
     margin: auto;
   }
 }
 
-footer .apriRrss {
-  background: #6C63FF;
+main #apriConfirm {
+  height: 100vh;
 }
 
-footer .apriRrss h6 {
+main #apriConfirm h2 {
+  font-weight: bold !important;
+  font-size: 56px !important;
+  color: #1E2022 !important;
+}
+
+main #apriConfirm h2 span {
+  color: #6C63FF;
+}
+
+main #apriConfirm p {
   font-weight: normal !important;
   font-size: 20px !important;
+  color: #697989 !important;
+  font-family: 'apriText';
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+main #apriConfirm a {
+  border-radius: 8px;
   color: #FFFFFF !important;
+  font-family: 'apriText-bold';
+  padding: 15px 25px;
+  -webkit-transition: .3s box-shadow,.3s background;
+  transition: .3s box-shadow,.3s background;
 }
 
-footer .apriRrss a {
-  font-size: 24px;
+@media screen and (max-width: 992px) {
+  main #apriConfirm h2 {
+    font-weight: "Lato" !important;
+    font-size: 48px !important;
+    color: #1E2022 !important;
+  }
 }
 
-footer .apriRrss a i {
-  color: #FFFFFF;
+@media screen and (max-width: 768px) {
+  main #apriConfirm {
+    height: auto;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: auto;
+  }
+  main #apriConfirm img {
+    margin-top: 100px;
+    width: 50%;
+  }
+  main #apriConfirm h2 {
+    margin-top: 25px;
+  }
 }
 
-footer .apriLinksFooter {
-  background: #323145;
-  padding-top: 38px;
+@media screen and (max-width: 420px) {
+  main #apriConfirm img {
+    margin-top: 85px;
+    width: 75%;
+  }
+  main #apriConfirm h2 {
+    font-weight: "Lato" !important;
+    font-size: 36px !important;
+    color: #1E2022 !important;
+    margin-top: 20px;
+  }
+  main #apriConfirm p {
+    font-size: 20px;
+  }
 }
 
-footer .apriLinksFooter h6 {
-  font-weight: bold !important;
-  font-size: 20px !important;
-  color: #FFFFFF !important;
+@media screen and (max-width: 375px) {
+  main #apriConfirm h2 {
+    font-weight: "Lato" !important;
+    font-size: 36px !important;
+    color: #1E2022 !important;
+  }
 }
 
-footer .apriLinksFooter hr {
-  background: #6C63FF;
-  height: 2.8px;
-  border-radius: 3px;
-}
-
-footer .apriLinksFooter p {
-  font-size: 16px;
-  color: #DEDEDF;
-}
-
-footer .apriLinksFooter p a {
-  color: #DEDEDF;
-}
-
-footer .apriLinksFooter p a:hover {
-  color: #FFFFFF;
-}
-
-footer .apriCopy {
-  background: #262535;
-}
-
-footer .apriCopy a {
-  font-weight: bold;
+@media screen and (max-width: 340px) {
+  main #apriConfirm h2 {
+    font-weight: "Lato" !important;
+    font-size: 28px !important;
+    color: #1E2022 !important;
+  }
+  main #apriConfirm p {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
