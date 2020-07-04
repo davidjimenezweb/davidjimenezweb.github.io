@@ -20,7 +20,7 @@
 }
 
 .apriButton {
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   -webkit-box-shadow: 0 2px 3px rgba(95, 88, 226, 0.3);
           box-shadow: 0 2px 3px rgba(95, 88, 226, 0.3);
 }
@@ -39,13 +39,14 @@
   font-weight: bold !important;
   font-size: 36px !important;
   color: #1E2022 !important;
+  font-family: 'Lato';
 }
 
 .apriTitle h2:after {
   content: " ";
   width: 110px;
   height: 3.5px;
-  background: #6C63FF;
+  background: #6c63ff;
   display: block;
   margin: 20px 0 20px 0;
   border-radius: 3px;
@@ -53,6 +54,7 @@
 
 .apriTitle p {
   font-size: 18px;
+  font-family: 'apriText-light';
   margin-top: 5px;
   color: #697989;
 }
@@ -65,7 +67,7 @@
     content: " ";
     width: 100px;
     height: 3px;
-    background: #6C63FF;
+    background: #6c63ff;
     display: block;
     margin: 20px auto;
     border-radius: 3px;
@@ -91,6 +93,34 @@ a:hover {
 
 .bg-active {
   background-color: #FFFFFF;
+}
+
+.container {
+  max-width: 1260px !important;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    max-width: 1150px !important;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    max-width: 1000px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 920px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
 }
 
 nav {
@@ -132,7 +162,7 @@ nav .apriMenu .apriLogo .apriName {
 }
 
 nav .apriMenu .apriLogo .apriName span {
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 nav .apriMenu .apriLogo .apriResponsive {
@@ -225,9 +255,6 @@ nav.fixed {
 }
 
 @media screen and (max-width: 991px) {
-  nav {
-    background: #323145;
-  }
   nav .apriMenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -324,7 +351,7 @@ nav.fixed {
 }
 
 #apriNavbar-2 .apriMenu .apriLogo .apriName span {
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 #apriNavbar-2 .apriMenu .apriLogo .apriResponsive {
@@ -412,7 +439,7 @@ nav.fixed {
 }
 
 footer .apriRrss {
-  background: #6C63FF;
+  background: #6c63ff;
 }
 
 footer .apriRrss h6 {
@@ -436,12 +463,13 @@ footer .apriLinksFooter {
 
 footer .apriLinksFooter h6 {
   font-weight: bold !important;
-  font-size: 20px !important;
+  font-size: 24px !important;
   color: #FFFFFF !important;
+  font-family: 'Lato';
 }
 
 footer .apriLinksFooter hr {
-  background: #6C63FF;
+  background: #6c63ff;
   height: 2.8px;
   border-radius: 3px;
 }
@@ -488,7 +516,7 @@ footer .apriCopy a {
 }
 
 #apriLanding .apriStart h2 span {
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 #apriLanding .apriStart p {
@@ -679,7 +707,7 @@ main #apriMeet .apriMe .apriInfo .title h2 {
 }
 
 main #apriMeet .apriMe .apriInfo .title h2 span {
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 main #apriMeet .apriMe .apriInfo .title small {
@@ -693,7 +721,7 @@ main #apriMeet .apriMe .apriInfo .title small:after {
   content: " ";
   width: 110px;
   height: 3.5px;
-  background: #6C63FF;
+  background: #6c63ff;
   display: block;
   margin: 20px 0 20px 0;
   border-radius: 3px;
@@ -707,7 +735,7 @@ main #apriMeet .apriMe .apriInfo .title small:after {
     content: " ";
     width: 100px;
     height: 3px;
-    background: #6C63FF;
+    background: #6c63ff;
     display: block;
     margin: 20px auto;
     border-radius: 3px;
@@ -717,12 +745,14 @@ main #apriMeet .apriMe .apriInfo .title small:after {
 main #apriMeet .apriMe .apriInfo p {
   color: #697989;
   font-size: 18px;
+  font-family: 'apriText';
 }
 
 main #apriMeet .apriMe .apriInfo .apriHobbies h3 {
   font-weight: bold !important;
   font-size: 24px !important;
   color: #1E2022 !important;
+  font-size: 'Lato';
   margin-top: 25px;
 }
 
@@ -739,7 +769,7 @@ main #apriMeet .apriMe .apriInfo .apriHobbies p {
 }
 
 main #apriMeet .apriMe .apriInfo .apriHobbies p i {
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 @media screen and (max-width: 340px) {
@@ -788,11 +818,12 @@ main #habilidades .apriSkills .apriSkill p {
   font-weight: normal !important;
   font-size: 20px !important;
   color: #697989 !important;
+  font-family: 'apriText';
   margin-bottom: 5px;
 }
 
 main #habilidades .apriSkills .apriSkill p i {
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 main #habilidades .apriSkills .apriSkill .progress {
@@ -803,7 +834,7 @@ main #habilidades .apriSkills .apriSkill .progress {
 }
 
 main #habilidades .apriSkills .apriSkill .progress .progress-bar {
-  background: #6C63FF;
+  background: #6c63ff;
 }
 
 main #habilidades .apriSkills h3 {
@@ -869,37 +900,95 @@ main #portfolio {
   padding-bottom: 100px;
 }
 
-main #portfolio .apriPortfolio img {
-  width: 50%;
-  display: block;
-  margin: auto;
-  margin-top: 40px;
+main #portfolio .apriPortfolio .apriCategorias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  main #portfolio .apriPortfolio img {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  main #portfolio .apriPortfolio img {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  main #portfolio .apriPortfolio img {
-    width: 100%;
-  }
-}
-
-main #portfolio .apriPortfolio h3 {
+main #portfolio .apriPortfolio .apriCategorias a {
   font-weight: normal !important;
   font-size: 20px !important;
+  color: #697989 !important;
+  font-family: 'apriText';
+  margin: 10px 20px;
+}
+
+main #portfolio .apriPortfolio .apriCategorias a.activo {
   color: #1E2022 !important;
-  text-align: center;
-  margin-top: 20px;
+}
+
+main #portfolio .apriPortfolio .apriCategorias a:hover {
+  color: #1E2022 !important;
+}
+
+main #portfolio .apriPortfolio .grid {
+  position: relative;
+  width: 100%;
+  -webkit-transition: opacity 0.5s linear 1s;
+  transition: opacity 0.5s linear 1s;
+}
+
+main #portfolio .apriPortfolio .grid .item {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 20px 15px;
+  width: calc(33.333333% - 30px);
+}
+
+@media screen and (max-width: 720px) {
+  main #portfolio .apriPortfolio .grid .item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main #portfolio .apriPortfolio .grid .item {
+    width: calc(100% - 30px);
+  }
+}
+
+main #portfolio .apriPortfolio .grid .item .card {
+  border-radius: 15px !important;
+  background: #F7F7FC;
+  -webkit-box-shadow: 0 0 0.7rem -0.2rem rgba(0, 0, 0, 0.13) !important;
+          box-shadow: 0 0 0.7rem -0.2rem rgba(0, 0, 0, 0.13) !important;
+}
+
+main #portfolio .apriPortfolio .grid .item .card:hover {
+  border-color: #6c63ff !important;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.7rem 0 rgba(0, 0, 0, 0.09) !important;
+          box-shadow: 0.2rem 0.2rem 0.7rem 0 rgba(0, 0, 0, 0.09) !important;
+}
+
+main #portfolio .apriPortfolio .grid .item .card img {
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
+
+main #portfolio .apriPortfolio .grid .item .card .card-body h3 {
+  font-weight: bold !important;
+  font-size: 20px !important;
+  color: #1E2022 !important;
+  font-family: 'Lato';
+}
+
+main #portfolio .apriPortfolio .grid .item .card .card-body p {
+  font-weight: normal !important;
+  font-size: 16px !important;
+  color: #697989 !important;
+  font-family: 'apriText';
+}
+
+main #portfolio .apriPortfolio .grid .item-contenido {
+  position: relative;
 }
 
 main #contacto {
@@ -912,11 +1001,12 @@ main #contacto .apriData p {
   font-weight: normal !important;
   font-size: 20px !important;
   color: #1E2022 !important;
+  font-family: 'apriText';
   margin-bottom: 25px;
 }
 
 main #contacto .apriData p i {
-  color: #6C63FF;
+  color: #6c63ff;
   font-size: 24px;
 }
 
@@ -924,12 +1014,15 @@ main #contacto form {
   background: #FFFFFF;
   padding: 25px 30px 40px 30px;
   border-radius: 15px;
+  -webkit-box-shadow: 0 0 0.7rem -0.2rem rgba(0, 0, 0, 0.13) !important;
+          box-shadow: 0 0 0.7rem -0.2rem rgba(0, 0, 0, 0.13) !important;
 }
 
 main #contacto form h5 {
   font-weight: normal !important;
   font-size: 14px !important;
   color: #1E2022 !important;
+  font-family: 'apriText-light';
   margin-bottom: 20px;
 }
 
@@ -942,7 +1035,7 @@ main #contacto form textarea.form-control {
 main #contacto form input:focus,
 main #contacto form input.form-control:focus,
 main #contacto form textarea.form-control:focus {
-  border-color: #6C63FF;
+  border-color: #6c63ff;
   outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
@@ -965,6 +1058,7 @@ main #contacto form button {
 }
 
 main #contacto form p.legal {
+  font-family: 'apriText-light';
   margin-top: 11px;
   font-size: 11px;
   line-height: 10pt;
@@ -991,7 +1085,7 @@ main #apriConfirm h2 {
 }
 
 main #apriConfirm h2 span {
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 main #apriConfirm p {

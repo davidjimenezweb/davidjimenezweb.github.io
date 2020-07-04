@@ -202,7 +202,7 @@
                <div class="offset-lg-1 order-lg-2"></div>
 
                <div class="apriImage col-lg-6 col-lg-6 order-lg-3 order-md-1 order-1">
-                  <img src="img/homepage/skills.svg" class="img-fluid wow fadeInUp">
+                  <img src="img/homepage/skills.svg" class="img-fluid wow fadeIn">
                </div>
             </div>
          </div>
@@ -214,10 +214,117 @@
                <h2 class="wow fadeInUp">Mi portfolio.</h2>
                <p class="wow fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sequi iure assumenda neque rerum, architecto sed nemo quidem sint ea itaque quam totam dolorum voluptas.</p>
             </div>
-
+      
             <div class="apriPortfolio">
-               <img src="img/mantenimiento.svg" class="img-fluid wow fadeIn">
-               <h3 class="wow fadeIn">Portfolio en construcción, disculpe las molestias.</h3>
+               <div class="apriCategorias" id="categorias">
+                  <a href="#" class="activo">Todos</a>
+                  <a href="#">Startup</a>
+                  <a href="#">Blog</a>
+                  <a href="#">Portfolio</a>
+                  <a href="#">Tienda</a>
+                  <a href="#">Diseño</a>
+                  <a href="#">Admin</a>
+               </div>
+
+               <section class="grid" id="grid">
+                  <div class="item" 
+                     data-categoria="startup"
+                  >
+                     <div class="item-contenido">
+                        <a href="templates/" class="card card-hover border-0 wow fadeIn">
+                           <img src="img/portfolio/aprisoft-portada.png" class="img-fluid card-img-top">
+                           <div class="card-body text-center">
+                              <h3 class="mb-2">Landing Page Design</h3>
+                              <p class="mb-2">UI / UX Design, Web Development</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+         
+                  <div class="item"
+                     data-categoria="startup"
+                  >
+                     <div class="item-contenido">
+                        <a href="templates/" class="card card-hover border-0 wow fadeIn">
+                           <img src="img/portfolio/mjt-portada.png" class="img-fluid card-img-top">
+                           <div class="card-body text-center">
+                              <h3 class="mb-2">Landing Page Design</h3>
+                              <p class="mb-2">UI / UX Design, Web Development</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+         
+                  <div class="item"
+                     data-categoria="portfolio"
+                  >
+                     <div class="item-contenido">
+                        <a href="templates/" class="card card-hover border-0 wow fadeIn">
+                           <img src="img/portfolio/arhel-portada.png" class="img-fluid card-img-top">
+                           <div class="card-body text-center">
+                              <h3 class="mb-2">Landing Page Design</h3>
+                              <p class="mb-2">UI / UX Design, Web Development</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+         
+                  <div class="item"
+                     data-categoria="diseño"
+                  >
+                     <div class="item-contenido">
+                        <a href="templates/" class="card card-hover border-0 wow fadeIn">
+                           <img src="img/portfolio/theme-portada.png" class="img-fluid card-img-top">
+                           <div class="card-body text-center">
+                              <h3 class="mb-2">Landing Page Design</h3>
+                              <p class="mb-2">UI / UX Design, Web Development</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+         
+                  <div class="item"
+                     data-categoria="blog"
+                  >
+                     <div class="item-contenido">
+                        <a href="templates/" class="card card-hover border-0 wow fadeIn">
+                           <img src="img/portfolio/blog-portada.png" class="img-fluid card-img-top">
+                           <div class="card-body text-center">
+                              <h3 class="mb-2">Landing Page Design</h3>
+                              <p class="mb-2">UI / UX Design, Web Development</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+         
+                  <div class="item"
+                     data-categoria="tienda"
+                  >
+                     <div class="item-contenido">
+                        <a href="templates/" class="card card-hover border-0 wow fadeIn">
+                           <img src="img/portfolio/shop-portada.png" class="img-fluid card-img-top">
+                           <div class="card-body text-center">
+                              <h3 class="mb-2">Landing Page Design</h3>
+                              <p class="mb-2">UI / UX Design, Web Development</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+         
+                  <div class="item"
+                     data-categoria="admin"
+                  >
+                     <div class="item-contenido">
+                        <a href="templates/" class="card card-hover border-0 wow fadeIn">
+                           <img src="img/portfolio/notaria-portada.png" class="img-fluid card-img-top">
+                           <div class="card-body text-center">
+                              <h3 class="mb-2">Landing Page Design</h3>
+                              <p class="mb-2">UI / UX Design, Web Development</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </section>
             </div>
          </div>
       </section>
@@ -237,12 +344,12 @@
                      <p class="wow fadeIn"><i class="fas fa-phone mr-3"></i> + 34 676 83 56 83</p>
                   </div>
 
-                  <img src="img/homepage/contact.svg" class="img-fluid wow fadeInUp">
+                  <img src="img/homepage/contact.svg" class="img-fluid wow fadeIn">
                </div>
 
                <div class="offset-lg-1"></div>
 
-               <form class="col-lg-6 mt-lg-0 mt-5 z-depth-1-half" action="php/mail.php" enctype="multipart/form-data" method="post">
+               <form class="col-lg-6 mt-lg-0 mt-5" action="php/mail.php" enctype="multipart/form-data" method="post">
                   <div class="text-center">
                      <h5 class="wow fadeIn">Las marcadas con un * son obligatorias.</h5>
                   </div>
@@ -362,7 +469,10 @@
    <script src="js/bootstrap.min.js"></script>
    <script src="js/mdb.min.js"></script>
    <script src="js/smooth-scroll.min.js"></script>
+   <script src="js/muuri.animation.min.js"></script>
+	<script src="js/muuri.min.js"></script>
    <script src="js/apri-script.js"></script>
+   <script src="js/portfolio.js"></script>
    <script>
       // Cambio de background
       const body = document.querySelector('.body');
