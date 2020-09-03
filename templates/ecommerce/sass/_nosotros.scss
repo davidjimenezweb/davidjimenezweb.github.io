@@ -1,0 +1,224 @@
+main.nosotros {
+    padding-top: 110px;
+
+    .jumbotron {
+        border-radius: $borderRadius;
+        border: 0;
+        background-size: cover;
+        background-position: center 0px;
+        background-repeat: no-repeat;
+        text-align: center;
+
+        h1 {
+            font-size: $sizeTitMax;
+            font-weight: bold;
+        }
+    
+        p {
+            width: 50%;
+            margin: auto;
+        }
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: $sizeTitMax;
+        text-align: left;
+    }
+
+    .empresa {
+        margin-bottom: 40px;
+
+        hr {
+            margin-bottom: 40px;
+        }
+        h5 {
+            font-weight: bold;
+            color: $secondColor;
+            margin-bottom: 2px;
+        }
+        p {
+            color: $thirdColor;
+            font-size: $sizeResume;
+        }
+    }
+
+    .historia {
+        margin-bottom: 40px;
+        
+        h5 {
+            font-weight: bold;
+            color: $secondColor;
+        }
+        
+        time {
+            font-weight: bold;
+            color: $mainColor;
+        }
+        p {
+            color: $thirdColor;
+            font-size: $sizeResume;
+        }
+        img {
+            border-radius: $borderRadius;
+        }
+
+        .timeline {
+            position: relative;
+            list-style: none;
+            padding: 1rem 0;
+            margin: 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            margin-left: -1px;
+            background-color: $secondColor;
+        }
+        
+        .timeline-element {
+            position: relative;
+            width: 50%;
+            padding: 1rem 0;
+            padding-right: 2.5rem;
+            text-align: right;
+        }
+        
+        .timeline-element::before {
+            content: '';
+            position: absolute;
+            right: -8px;
+            top: 1.35rem;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid $secondColor;
+            background-color: #fff;
+        }
+        
+        .timeline-element:nth-child(even)::before {
+            right: auto;
+            left: -8px;
+        }
+        
+        .timeline-element:nth-child(even) {
+            margin-left: 50%;
+            padding-left: 2.5rem;
+            padding-right: 0;
+            text-align: left;
+        }
+        
+        @media (max-width: 767.98px) {
+            .timeline::before {
+                left: 8px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .timeline-element {
+                width: 100%;
+                text-align: left;
+                padding-left: 2.5rem;
+                padding-right: 0;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .timeline-element::before {
+                top: 1.25rem;
+                left: 1px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .timeline-element:nth-child(even) {
+                margin-left: 0rem;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .timeline-element {
+                width: 100%;
+                text-align: left;
+                padding-left: 2.5rem;
+                padding-right: 0;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .timeline-element:nth-child(even)::before {
+                left: 1px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .timeline-element::before {
+                top: 1.25rem;
+            }
+        }
+    }
+
+    .equipo {
+        margin-bottom: 40px;
+        text-align: center;
+
+        hr {
+            margin-bottom: 40px;
+        }
+        img {
+            margin-bottom: 20px;
+            border-radius: $borderRadius;
+        }
+        h5 {
+            color: $secondColor;
+            font-weight: bold;
+        }
+        small {
+            color: $mainColor;
+            margin-bottom: 10px;
+        }
+        p {
+            color: $thirdColor;
+            font-size: $sizeNormal;
+        }
+        i {
+            color: $mainColor;
+        }
+        i:hover {
+            color: $secondColor;
+        }
+    }
+}
+
+@media screen and (max-width: 910px) {
+    main.nosotros {
+        padding-top: 65px;
+
+        .jumbotron {
+            text-align: center;
+
+            h1 {
+                margin: auto;
+            }
+            p {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main.nosotros {
+        .jumbotron {
+            h1 {
+                font-size: 30px !important;
+            }
+        }
+    }
+}

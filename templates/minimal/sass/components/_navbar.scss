@@ -1,0 +1,129 @@
+.nav {
+    margin: auto;
+    padding-top: 30px !important;
+    background: transparent;
+    transition: all 0.5s ease;
+
+    .navbar-brand {
+        @include titulo($sizeTitle3, $grey);
+        margin-right: 21.5%;
+    }
+
+    button {
+        .iconify {
+            color: $grey;
+            font-size: 35px;
+        }
+    }
+
+    .links {
+        border-bottom: .5px solid $grey;
+
+        li {
+            a {
+                font-size: $sizeResume;
+                color: $grey;
+            }
+        }
+
+        .navbar-nav a:nth-child(1) {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+
+        a {
+            color: $grey;
+            padding-right: 0px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .navbar-brand {
+            margin-right: 5%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 15px !important;
+        background: $dark;
+
+        li {
+            a {
+                font-size: $sizeResume;
+                color: $grey;
+            }
+        }
+
+        .navbar-nav a:nth-child(1) {
+            margin-left: 6px;
+            font-size: $sizeNormal;
+        }
+    }
+}
+
+.navbar.scrolled {
+    background: $light;
+    padding-top: 8px !important;
+    padding-bottom: 5px;
+    /* -webkit-box-shadow: 0px 6px 28px -18px #b0b0b0 !important;
+    -moz-box-shadow: 0px 6px 28px -18px #b0b0b0 !important;
+    box-shadow: 0px 6px 28px -18px #b0b0b0 !important; */
+
+    .navbar-brand, .links a {
+        color: $dark !important;
+    }
+
+    .links {
+        border-bottom: .5px solid $dark;
+    }
+
+    .link {
+        a {
+            color: $dark;
+        }
+    }
+
+    button {
+        .iconify {
+            color: $dark;
+        }
+    }
+}
+
+.navbar-black {
+    nav {
+        background: $light;
+        /* -webkit-box-shadow: 0px 6px 28px -18px #b0b0b0 !important;
+        -moz-box-shadow: 0px 6px 28px -18px #b0b0b0 !important;
+        box-shadow: 0px 6px 28px -18px #b0b0b0 !important; */
+
+        .navbar-brand, button i, .links a {
+            color: $dark !important;
+        }
+
+        .links {
+            border-bottom: .5px solid $dark;
+        }
+
+        button {
+            .iconify {
+                color: $dark;
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        nav {
+            .navbar-brand {
+                margin-right: 5%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        nav {
+            padding-top: 15px !important;
+            background: $light;
+        }
+    }
+}

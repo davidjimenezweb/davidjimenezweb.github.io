@@ -1,0 +1,111 @@
+main.login-admin {
+    .container {
+        max-width: 100vw;
+    }
+    
+    .formulario {
+        height: 100vh;
+        padding: 20px 20px;
+        position: relative;
+
+        a {
+            color: $secondColor;
+            font-size: $sizeResume;
+            text-decoration: none;
+        }
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-weight: 800;
+            font-size: 30px;
+            color: $mainColor;
+        }
+
+        h2:after {
+            content: " ";
+            width: 100px;
+            height: 5px;
+            background: $secondColor;
+            display: block;
+            margin-top: 20px;
+            border-radius: 3px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        input {
+            border-radius: $borderRadius;
+        }
+
+        button {
+            border-radius: $borderRadius;
+            color: $mainColor2;
+        }
+
+        .registro {
+            text-align: center;
+            margin-top: 40px;
+
+            h6 {
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            a {
+                font-size: $sizeResume;
+            }
+        }
+
+        .copy-text{
+            position: absolute;
+            width: 80%;
+            bottom: 20px;
+            font-size: 13px;
+            text-align: center;
+        }
+        .copy-text i{
+            color: $secondColor;
+        }
+        .copy-text a{
+            color: $secondColor;
+        }
+    }
+
+    .imagen {
+        background-size: cover;
+        background-position: center 0px;
+        background-repeat: no-repeat;
+        color: $mainColor2;
+
+        .banner {
+            width: 70%;
+            position: absolute;
+            bottom: 80px;
+            padding-left: 40px;
+
+            h2 {
+                font-weight: bold;
+            }
+            h2:after{
+                content:" ";
+                width:100px;
+                height:5px;
+                background:#FFF;
+                display:block;
+                margin-top:20px;
+                border-radius:3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .imagen {
+        display: none;
+    }
+} 

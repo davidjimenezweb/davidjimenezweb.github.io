@@ -1,0 +1,156 @@
+header {
+   padding-bottom: 120px;
+
+   section.apriLandingArticle {
+      .apriImage {
+         img {
+            @include img(550px);
+
+            @media screen and (max-width: 991px) {
+               @include img(300px);
+               padding-left: 0 !important;
+            }
+         }
+
+         @media screen and (max-width: 991px) {
+            padding: 0;
+         }
+      }
+
+      .apriTitleArticle {
+         position: absolute;
+         padding-top: 15px;
+         background: $light;
+         right: 250px;
+
+         h1 {
+            margin-bottom: 0;
+            @include titulo($sizeTitle1, bold);
+         }
+
+         h6 {
+            @include subtitulo;
+            font-weight: normal !important;
+         }
+
+         @media screen and (max-width: 991px) {
+            position: relative;
+            right: 0;
+            max-width: 735px;
+            margin: 15px auto;
+            
+            h1, h6 {
+               padding: 0;
+            }
+         }
+
+         @media screen and (max-width: 768px) {
+            
+         }
+
+         @media screen and (max-width: 544px) {
+            h1 {
+               @include titulo($sizeTitle3, bold);
+            }
+         }
+      }
+   }
+
+   @media screen and (max-width: 991px) {
+      padding-bottom: 20px;
+   }
+}
+
+main.apriArticle {
+   margin-bottom: 60px;
+
+   section.apriTextArticle {
+      max-width: 735px;
+      line-height: 2rem;
+      display: block;
+      margin: 0 auto;
+
+      p {
+         padding-bottom: 10px;
+         font-size: $sizeTitle4;
+      }
+
+      img {
+         @include img(450px);
+         display: block;
+         margin: auto;
+         margin-bottom: 25px;
+      }
+
+      @media screen and (max-width: 768px) {
+         img {
+            @include img(300px);
+         }
+      }
+   }
+
+   .adsArticle {
+      img {
+         @include img(610px);
+      }
+
+      @media screen and (max-width: 991px) {
+         img {
+            @include img(200px);
+         }
+      }
+   }
+
+   section.apriMasVistos {
+      .apriTitleSection {
+         margin: 60px 0 40px 0;
+
+			@include titleSection;
+      }
+      
+      .apriScrollMasVistos {
+         @include scroll;
+   
+         article {
+            display: inline-block;
+            width: 300px;
+            padding-right: 20px;
+            margin-right: 10px;
+            vertical-align: top;
+   
+            .apriImageArticle {
+               img {
+                  @include img(200px);
+               }
+            }
+   
+            .apriTitleArticle {
+               white-space: normal;
+               padding-top: 20px;
+   
+               h6 {
+                  @include subtitulo($dark);
+                  font-size: $sizeResume2 !important;
+               }
+   
+               h2 {
+                  @include titulo($sizeTitle4);
+               }
+   
+               p {
+                  font-size: $sizeResume;
+                  color: $textGrey;
+                  display: block;
+                  display: -webkit-box;
+                  height: $sizeResume * 1.5 * 4;
+                  line-height: 1.5;
+                  -webkit-line-clamp: 4;
+                  -webkit-box-orient: vertical;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+               }
+            }
+         }
+      }
+   }
+}

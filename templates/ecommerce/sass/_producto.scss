@@ -1,0 +1,119 @@
+main.producto {
+    height: 100vh;
+    
+    a.volver {
+        color: $secondColor;
+        font-size: $sizeResume;
+    }
+
+    .carousel {
+        margin-bottom: 10px;
+
+        img {
+            border-radius: $borderRadius;
+        }
+    }
+
+    figure {
+        img {
+            border-radius: $borderRadius;
+        }
+    }
+    h1 {
+        font-size: $sizeTitMax;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    span {
+        font-size: 30px;
+        font-weight: bold;
+        color: $secondColor;
+    }
+    small {
+        font-size: $sizeNormal;
+        color: $thirdColor;
+    }
+
+    .caracteristicas {
+        margin-top: 20px;
+        font-size: $sizeTitProd;
+
+        p.extracto {
+            margin-bottom: 30px;
+            color: $thirdColor;
+        }
+        p {
+            margin-bottom: 5px;
+            color: $thirdColor;
+            strong {
+                color: $mainColor;
+            }
+        }
+
+        a {
+            padding: 15px 15px;
+            color: $mainColor2;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+div.datos-prod {
+    margin-bottom: 60px;
+
+    h2 {
+        font-weight: bold;
+        font-size: $sizeTitMax;
+        margin-bottom: 20px;
+    }
+
+    .descripcion {
+        margin-bottom: 120px;
+
+        h3 {
+            font-weight: bold;
+        }
+        p {
+            color: $thirdColor;
+            font-size: $sizeNormal;
+        }
+        img {
+            border-radius: $borderRadius;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main.producto {
+        height: auto;
+        padding-top: 65px;
+        margin-bottom: 60px;
+    }
+
+    div.datos-prod {
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-height: 650px) {
+    main.producto {
+        height: auto;
+        padding-top: 110px;
+    }
+    @media screen and (max-width: 768px) {
+        main.producto {
+            height: auto;
+            padding-top: 65px;
+        }
+
+        div.datos-prod {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+}

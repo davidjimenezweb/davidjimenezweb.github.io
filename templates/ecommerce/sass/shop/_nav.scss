@@ -1,0 +1,49 @@
+nav.compra {
+    background: $secondColor;
+	padding: 10px 0;
+	width: 100%;
+
+    .contenedor-nav-compra {
+        .logo {
+            padding-top: 6px;
+            a {
+                color: $mainColor2;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+
+		.questions {
+			p {
+                color: $mainColor2;
+                font-size: $sizeResume;
+                margin-top: 15px;
+                text-align: right;
+			}
+		}
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    nav.compra {
+        .container {
+            max-width: 100% !important;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    nav.compra {
+        .contenedor-nav-compra {
+            .logo {
+                padding-top: 0;
+                text-align: center;
+            }
+            .questions {
+                display: none;
+            }
+        }
+    }
+}

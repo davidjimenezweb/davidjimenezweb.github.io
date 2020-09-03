@@ -1,0 +1,105 @@
+main.cliente {
+    padding-top: 110px;
+
+    .principal {
+        .nueva-cuenta {
+            background-color: $bgColor;
+            border-radius: $borderRadius;
+            margin-bottom: 20px;
+            padding: 20px 20px 8px 20px;
+    
+            h2 {
+                font-weight: bold;
+                font-size: $sizeTitle;
+            }
+            p {
+                font-size: $sizeResume;
+                color: $thirdColor;
+            }
+        }
+
+        .usuario {
+            h2 {
+                font-weight: bold;
+                font-size: $sizeTitle;
+            }
+            p {
+                font-size: $sizeResume;
+                margin-top: 5px;
+
+                a {
+                    color: $secondColor;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        /*.pedidos {
+
+        }*/
+
+        hr {
+            margin: 30px 0;
+        }
+
+        .recomendacion {
+            h2 {
+                font-weight: bold;
+                margin-bottom: 20px;
+                font-size: $sizeTitle;
+            }
+    
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .secciones {
+        .cuenta {
+            margin-top: 40px;
+    
+            h2 {
+                font-weight: bold;
+                font-size: $sizeTitProd;
+            }
+            p {
+                margin-bottom: 12px;
+                a {
+                    color: $secondColor;
+                    font-size: $sizeResume;
+                }
+            }
+        }
+
+        hr {
+            margin: 40px 0;
+        }
+
+        .ayuda {
+            h2 {
+                font-weight: bold;
+                font-size: $sizeTitProd;
+            }
+            p {
+                margin-bottom: 2px;
+                a {
+                    color: $secondColor;
+                    font-size: $sizeResume;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 910px) {
+    main.cliente {
+        padding-top: 90px;
+    }
+
+    .secciones {
+        .cuenta, .ayuda {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,226 @@
+main.envios, main.pagos {
+    padding-top: 10px;
+
+    .breadcrumb {
+        background: #fff;
+        padding-left: 0;
+        padding-bottom: 0;
+        
+        li {
+            color: $thirdColor;
+
+            a {
+                color: $secondColor;
+                text-decoration: none;
+
+                span {
+                    background: $secondColor;
+                }
+            }
+
+            span {
+                background: $thirdColor;
+                padding: 3px 7px;
+                border-radius: $borderRadius;
+                color: $mainColor2;
+            }
+        }
+    }
+
+    .envio, .pago {
+        margin-bottom: 70px;
+        
+        .datos {
+            h1 {
+                font-weight: bold;
+                font-size: $sizeTitMax;
+            }
+
+            input {
+                border-radius: $borderRadius;
+                border: none;
+                background: $bgColor;
+            }
+
+            form.form-pago {
+                margin-top: 40px;
+
+                label {
+                    font-weight: bold;
+                    font-size: $sizeTitle;
+
+                    span {
+                        font-size: $sizeResume;
+                    }
+                }
+                p {
+                    font-size: $sizeResume;
+                    color: $thirdColor;
+
+                    a {
+                        color: $secondColor;
+                    }
+                }
+                select {
+                    background: $bgColor !important;
+                    border: 0;
+                    border-radius: $borderRadius;
+                }
+
+                hr {
+                    margin: 50px 0;
+                }
+
+                button {
+                    margin-top: 30px;
+                }
+            }
+        }
+    
+        .sesion {
+            .datos, .inicio-sesion, .envio {
+                background-color: $bgColor;
+                border-radius: $borderRadius;
+                padding: 15px 10px;
+                margin-bottom: 20px;
+                font-size: $sizeResume;
+
+                h2 {
+                    font-weight: bold;
+                    font-size: $sizeTitle;
+                    text-align: left !important;
+                }
+
+                a {
+                    color: $secondColor;
+                }
+
+                .form-inicio {
+                    text-align: left;
+                    background-color: #fff;
+                    border-radius: $borderRadius;
+                    margin-top: 10px;
+                    padding: 20px 10px;
+
+                    input {
+                        border-radius: $borderRadius;
+                        border: none;
+                        background: $bgColor;
+                    }
+                }
+
+                .resumen {
+                    text-align: left;
+                    background-color: #fff;
+                    border-radius: $borderRadius;
+                    padding: 20px 10px;
+
+                    h5 {
+                        font-size: $sizeTitProd;
+                    }
+                    hr {
+                        margin: 8px 0;
+                    }
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    .total {
+                        font-size: $sizeNormal;
+                    }
+                }
+            }
+
+            .descuento {
+                background-color: $bgColor;
+                border-radius: $borderRadius;
+                
+                padding: 20px 10px;
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: $sizeTitle;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+                h2:hover {
+                    cursor: pointer;
+                }
+
+                .promocion {
+                    .card {
+                        border-radius: $borderRadius !important;
+                        border: 0;
+
+                        input {
+                            border-radius: $borderRadius;
+                            border: none;
+                            background: $bgColor;
+                            padding: 10px;
+                            outline: none;
+                        }
+
+                        small {
+                            color: $thirdColor;
+                            text-align: center;
+                        }
+
+                        a {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+
+            .info {
+                h2 {
+                    font-weight: bold;
+                    font-size: $sizeTitle;
+                }
+                p {
+                    margin-bottom: 2px;
+                    a {
+                        color: $secondColor;
+                        font-size: $sizeResume;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    .recomendacion {
+        margin-top: 60px;
+
+        h2 {
+            font-weight: bold;
+            font-size: $sizeTitMax;
+            margin-bottom: 20px;
+            
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 468px) {
+    main.envios, main.pagos {
+        .breadcrumb {
+            li {
+                font-size: $sizeResume;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main.envios, main.pagos {
+        .breadcrumb {
+            li {
+                font-size: 10px;
+            }
+        }
+    }
+}

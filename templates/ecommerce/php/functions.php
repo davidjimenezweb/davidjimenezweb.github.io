@@ -1,0 +1,1 @@
+<?php define('RUTA', 'https://davidjimenezweb.github.io/templates/ecommerce/index.php'); ?>

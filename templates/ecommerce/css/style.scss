@@ -1,0 +1,105 @@
+@import '../sass/variables';
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.button {
+	border: 0;
+	color: $mainColor2;
+	background-color: $secondColor;
+	border-radius: $borderRadius;
+}
+.button:hover {
+	color: $mainColor2 !important;
+}
+
+.productos {
+	a:hover {
+		text-decoration: none;
+	}
+
+	.producto {
+		margin-bottom: 25px;
+
+		img {
+			border-radius: $borderRadius;
+			margin-bottom: 12px;
+		}
+
+		h5 {
+			font-size: $sizeTitProd;
+			color: $secondColor;
+			font-weight: bold;
+		}
+
+		h6 {
+			font-size: $sizeResume;
+			color: $thirdColor;
+			margin-bottom: 8px;
+		}
+
+		p {
+			color: $mainColor;
+		}
+
+		span {
+			font-size: 12px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.productos {
+		.producto {
+			margin: auto;
+
+			img {
+				width: 80%;
+			}
+		
+			h5 {
+				font-size: $sizeTitle;
+			}
+		
+			h6 {
+				font-size: $sizeTitProd;
+			}
+		
+			p {
+				font-size: $sizeTitProd;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+/* FRONT END */
+@import '../sass/header';
+@import '../sass/inicio';
+@import '../sass/footer';
+@import '../sass/categoria';
+@import '../sass/filtros';
+@import '../sass/producto';
+@import '../sass/contacto';
+@import '../sass/nosotros';
+@import '../sass/ayuda';
+
+@import '../sass/shop/nav';
+@import '../sass/shop/carrito';
+@import '../sass/shop/envio';
+@import '../sass/shop/realizado';
+
+/* CLIENTE */
+@import '../sass/cliente/inicio_sesion';
+@import '../sass/cliente/inicio';
+
+
+/* ADMIN */
+@import '../sass/admin/inicio_sesion';
