@@ -1,0 +1,86 @@
+footer {
+   background: $dark;
+   color: $light;
+
+   a {
+      color: $light;
+
+      &:hover {
+         color: $light;
+      }
+   }
+
+   section.apriCompany {
+      h5 {
+         @include titulo($sizeTitle2, bold, $light);
+         @include underline(150px, 5px);
+      }
+
+      p {
+         font-size: $sizeResume;
+      }
+
+      @media screen and (max-width: 768px) {
+         h5 {
+            &:after {
+               margin: auto;
+               margin-top: 5px;
+            }
+         }
+
+         p {
+            font-size: $sizeResume;
+         }
+      }
+   }
+
+   section.apriPages, section.apriCategories, section.apriContact {
+      h5 {
+         @include titulo($sizeTitle3, bold, $light);
+      }
+
+      p {
+         font-size: $sizeResume;
+      }
+
+      @media screen and (max-width: 768px) {
+         p {
+            font-size: $sizeNormal;
+         }
+      }
+   }
+
+   section.apriContact {
+      p {
+         .iconify {
+            font-size: 27px;
+            margin-right: 5px;
+            color: $brandColor;
+         }
+      }
+   }
+
+   section.copyright {
+      p {
+         margin-top: 12px;
+
+         a {
+            font-weight: bold;
+            color: $brandColor;
+         }
+      }
+   }
+   
+   section.social {
+      li {
+         a {
+            background: $brandColor;
+
+            .iconify {
+               font-size: $sizeTitle3;
+               margin: 3px 3px;
+            }
+         }
+      }
+   }
+}
