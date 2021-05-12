@@ -1,0 +1,59 @@
+#homepage {
+    header {
+        nav {
+            a {
+                color: $light !important;
+            }
+    
+            button {
+                .iconify {
+                    font-size: $title;
+                    color: $light;
+                }
+            }
+        
+            #nav-links {
+                margin-top: 5px;
+                
+                li {
+                    padding: 8px 5px;
+        
+                    a {
+                        color: $light;
+                    }
+                }
+        
+                .contact {
+                    background: $brand;
+                    color: $light;
+                    padding: 5px 15px;
+                    border-radius: 50px;
+                    text-decoration: none;
+                    height: 100%;
+                }
+            }
+
+            @media screen and (max-width: 1200px) {
+                a {
+                    color: $dark !important;
+                }
+
+                #nav-links {
+                    li {
+                        a {
+                            color: $dark;
+                        }
+                    }
+
+                    .contact {
+                        text-align: center;
+
+                        a {
+                            color: $light !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

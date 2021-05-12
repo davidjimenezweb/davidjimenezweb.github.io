@@ -1,0 +1,14 @@
+// * Abstracts
+@import '../sass/abstracts/variables';
+@import '../sass/abstracts/mixins';
+
+// * Components
+@import '../sass/components/styles';
+@import '../sass/components/forms';
+
+// * Layouts
+@import '../sass/layout/navbar';
+@import '../sass/layout/footer';
+
+// * Pages
+@import '../sass/pages/homepage';

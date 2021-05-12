@@ -1,0 +1,46 @@
+footer {
+    margin-top: 90px;
+    background-color: $dark;
+    padding-top: 50px;
+
+    h5 {
+        color: $light !important;
+        margin-bottom: 25px;
+    }
+
+    ul {
+        li {
+            color: $light;
+            margin-bottom: 20px;
+
+            &:hover {
+                color: $light;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+
+            a {
+                color: $light;
+                text-decoration: none;
+
+                &:hover {
+                    color: $light;
+                }
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        background: #0D131C;
+
+        a {
+            color: $brand;
+        }
+    }
+}
