@@ -8,6 +8,7 @@
   font-family: 'Roboto', sans-serif;
   color: #8A8989;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .title {
@@ -68,6 +69,13 @@ input[type=submit] {
   padding: 15px 30px;
   border-radius: 50px;
   text-decoration: none;
+  -webkit-transition: .2s box-shadow,.2s;
+  transition: .2s box-shadow,.2s;
+}
+
+input[type=submit]:hover {
+  background: #928268;
+  border-color: #928268;
 }
 
 @media screen and (max-width: 991px) {
@@ -104,6 +112,13 @@ input[type=submit] {
   border-radius: 50px;
   text-decoration: none;
   height: 100%;
+  -webkit-transition: .2s box-shadow,.2s;
+  transition: .2s box-shadow,.2s;
+}
+
+#homepage header nav #nav-links .contact:hover {
+  background: #928268;
+  border-color: #928268;
 }
 
 @media screen and (max-width: 1200px) {
@@ -117,6 +132,61 @@ input[type=submit] {
     text-align: center;
   }
   #homepage header nav #nav-links .contact a {
+    color: #FFFFFF !important;
+  }
+}
+
+#services nav a {
+  color: #1A2537 !important;
+}
+
+#services nav button .iconify {
+  font-size: 32px;
+  color: #1A2537;
+}
+
+#services nav #nav-links {
+  margin-top: 5px;
+}
+
+#services nav #nav-links li {
+  padding: 8px 5px;
+}
+
+#services nav #nav-links li a {
+  color: #1A2537;
+}
+
+#services nav #nav-links .contact {
+  background: #B19E80;
+  padding: 5px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  height: 100%;
+  -webkit-transition: .2s box-shadow,.2s;
+  transition: .2s box-shadow,.2s;
+}
+
+#services nav #nav-links .contact a {
+  color: #FFFFFF !important;
+}
+
+#services nav #nav-links .contact:hover {
+  background: #928268;
+  border-color: #928268;
+}
+
+@media screen and (max-width: 1200px) {
+  #services nav a {
+    color: #1A2537 !important;
+  }
+  #services nav #nav-links li a {
+    color: #1A2537;
+  }
+  #services nav #nav-links .contact {
+    text-align: center;
+  }
+  #services nav #nav-links .contact a {
     color: #FFFFFF !important;
   }
 }
@@ -152,6 +222,7 @@ footer ul li a {
 
 footer ul li a:hover {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 
 footer ul li a img {
@@ -230,6 +301,13 @@ footer .footer-copyright a {
   padding: 15px 30px;
   border-radius: 50px;
   text-decoration: none;
+  -webkit-transition: .2s box-shadow,.2s;
+  transition: .2s box-shadow,.2s;
+}
+
+#homepage header #landing .landing a:hover {
+  background: #928268;
+  border-color: #928268;
 }
 
 #homepage header #landing .landing a:hover {
@@ -340,6 +418,13 @@ footer .footer-copyright a {
   padding: 15px 30px;
   border-radius: 50px;
   text-decoration: none;
+  -webkit-transition: .2s box-shadow,.2s;
+  transition: .2s box-shadow,.2s;
+}
+
+#homepage #about a:hover {
+  background: #928268;
+  border-color: #928268;
 }
 
 #homepage #about a:hover {
@@ -418,10 +503,17 @@ footer .footer-copyright a {
   padding: 15px 30px;
   border-radius: 50px;
   text-decoration: none;
+  -webkit-transition: .2s box-shadow,.2s;
+  transition: .2s box-shadow,.2s;
   display: block;
   width: 200px;
   text-align: center;
   margin-left: auto;
+}
+
+#homepage #services .text .services a:hover {
+  background: #928268;
+  border-color: #928268;
 }
 
 #homepage #services .text .services a img {
@@ -434,20 +526,20 @@ footer .footer-copyright a {
   }
 }
 
-#homepage #contact {
+#homepage #contacto {
   margin-top: 90px;
 }
 
-#homepage #contact h2 {
+#homepage #contacto h2 {
   margin-bottom: 30px;
 }
 
-#homepage #contact h3 {
+#homepage #contacto h3 {
   color: #B19E80;
   margin-bottom: 25px;
 }
 
-#homepage #contact h4 {
+#homepage #contacto h4 {
   color: #1A2537;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -455,17 +547,114 @@ footer .footer-copyright a {
   margin-bottom: 10px;
 }
 
-#homepage #contact p {
+#homepage #contacto p {
   margin-bottom: 25px;
 }
 
-#homepage #contact form {
+#homepage #contacto form {
   margin-bottom: 30px;
 }
 
-#homepage #contact iframe {
+#homepage #contacto iframe {
   width: 100%;
   height: 400px;
   border-radius: 8px;
+}
+
+#services #servicios .head {
+  margin-bottom: 90px;
+}
+
+#services #servicios .particulares, #services #servicios .bank, #services #servicios .company, #services #servicios .real-state {
+  margin-bottom: 90px;
+}
+
+#services #servicios .particulares h2, #services #servicios .bank h2, #services #servicios .company h2, #services #servicios .real-state h2 {
+  margin-bottom: 40px;
+}
+
+#services #servicios .particulares h2 img, #services #servicios .bank h2 img, #services #servicios .company h2 img, #services #servicios .real-state h2 img {
+  margin-right: 15px;
+}
+
+#services #servicios .particulares p, #services #servicios .bank p, #services #servicios .company p, #services #servicios .real-state p {
+  color: #1A2537;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#services #servicios .particulares p img, #services #servicios .bank p img, #services #servicios .company p img, #services #servicios .real-state p img {
+  margin-right: 10px;
+}
+
+#services #servicios .image img {
+  border-radius: 8px;
+}
+
+#services #prestamos {
+  margin-top: 90px;
+}
+
+#services #prestamos h2 {
+  margin-bottom: 30px;
+}
+
+#services #prestamos p {
+  line-height: 1.8;
+}
+
+#services #enlaces-de-interes {
+  margin-top: 90px;
+}
+
+#services #enlaces-de-interes h2 {
+  margin-bottom: 40px;
+}
+
+#services #enlaces-de-interes a {
+  color: #B19E80;
+  display: block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#services #enlaces-de-interes a:hover {
+  text-decoration: underline;
+}
+
+#services #enlaces-de-interes a img {
+  margin-right: 15px;
+}
+
+#services #contact {
+  margin-top: 90px;
+}
+
+#services #contact .titulo {
+  background: #EEEEEE;
+  padding: 50px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#services #contact .titulo h2 {
+  margin-bottom: 50px;
+}
+
+#services #contact .titulo a {
+  background: #B19E80;
+  border: 1px solid #B19E80;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  -webkit-transition: .2s box-shadow,.2s;
+  transition: .2s box-shadow,.2s;
+}
+
+#services #contact .titulo a:hover {
+  background: #928268;
+  border-color: #928268;
 }
 /*# sourceMappingURL=style.css.map */

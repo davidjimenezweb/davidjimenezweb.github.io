@@ -1,0 +1,90 @@
+#services {
+    #servicios {
+        .head {
+            margin-bottom: 90px;
+        }
+
+        .particulares, .bank, .company, .real-state {
+            margin-bottom: 90px;
+
+            h2 {
+                margin-bottom: 40px;
+
+                img {
+                    margin-right: 15px;
+                }
+            }
+
+            p {
+                color: $dark;
+                font-size: $label;
+                margin-bottom: 25px;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .image {
+            img {
+                border-radius: $border;
+            }
+        }
+    }
+
+    #prestamos {
+        margin-top: 90px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+    }
+
+    #enlaces-de-interes {
+        margin-top: 90px;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: $brand;
+            display: block;
+            margin-bottom: 15px;
+            text-decoration: none;
+            font-size: $label;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    #contact {
+        margin-top: 90px;
+
+        .titulo {
+            background: $back;
+            padding: 50px;
+            text-align: center;
+            border-radius: $border;
+
+            h2 {
+                margin-bottom: 50px;
+            }
+
+            a {
+                @include button;
+            }
+        }
+    }
+}

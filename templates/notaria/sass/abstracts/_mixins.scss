@@ -5,4 +5,10 @@
     padding: 15px 30px;
     border-radius: 50px;
     text-decoration: none;
+    transition: .2s box-shadow,.2s;
+
+    &:hover {
+        background: $brandHover;
+        border-color: $brandHover;
+    }
 }
