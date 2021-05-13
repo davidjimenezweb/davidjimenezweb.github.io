@@ -387,31 +387,31 @@ footer .footer-copyright a {
   text-decoration: none;
 }
 
-#homepage #about {
+#homepage #about-home {
   margin-top: 90px;
 }
 
-#homepage #about h2 {
+#homepage #about-home h2 {
   margin-bottom: 30px;
 }
 
-#homepage #about p {
+#homepage #about-home p {
   margin-bottom: 30px;
   width: 85%;
 }
 
-#homepage #about p span {
+#homepage #about-home p span {
   color: #B19E80;
   font-weight: 700;
 }
 
 @media screen and (max-width: 991px) {
-  #homepage #about p {
+  #homepage #about-home p {
     width: 100%;
   }
 }
 
-#homepage #about a {
+#homepage #about-home a {
   background: #FFFFFF;
   border: 1px solid #1A2537;
   color: #1A2537;
@@ -422,81 +422,81 @@ footer .footer-copyright a {
   transition: .2s box-shadow,.2s;
 }
 
-#homepage #about a:hover {
+#homepage #about-home a:hover {
   background: #928268;
   border-color: #928268;
 }
 
-#homepage #about a:hover {
+#homepage #about-home a:hover {
   background: #B19E80;
   border-color: #B19E80;
   color: #FFFFFF;
 }
 
 @media screen and (max-width: 991px) {
-  #homepage #about a {
+  #homepage #about-home a {
     display: block;
     text-align: center;
   }
 }
 
-#homepage #about img {
+#homepage #about-home img {
   border-radius: 8px;
   width: 100%;
 }
 
 @media screen and (max-width: 991px) {
-  #homepage #about img {
+  #homepage #about-home img {
     margin-top: 35px;
   }
 }
 
-#homepage #services {
+#homepage #services-home {
   margin-top: 90px;
   background: #EEEEEE;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-#homepage #services .image img {
+#homepage #services-home .image img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
 }
 
 @media screen and (max-width: 991px) {
-  #homepage #services .image img {
+  #homepage #services-home .image img {
     margin-top: 30px;
   }
 }
 
-#homepage #services .text {
+#homepage #services-home .text {
   background: #FFFFFF;
   border-radius: 8px;
   padding: 30px;
   padding-bottom: 0;
 }
 
-#homepage #services .text .services {
+#homepage #services-home .text .services {
   padding: 30px;
 }
 
 @media screen and (max-width: 440px) {
-  #homepage #services .text .services {
+  #homepage #services-home .text .services {
     padding: 15px;
   }
 }
 
-#homepage #services .text .services p {
+#homepage #services-home .text .services p {
   margin-bottom: 29.5px;
 }
 
-#homepage #services .text .services p img {
+#homepage #services-home .text .services p img {
   margin-right: 20px;
   margin-bottom: 5px;
 }
 
-#homepage #services .text .services a {
+#homepage #services-home .text .services a {
   background: #B19E80;
   border: 1px solid #B19E80;
   color: #FFFFFF;
@@ -511,17 +511,17 @@ footer .footer-copyright a {
   margin-left: auto;
 }
 
-#homepage #services .text .services a:hover {
+#homepage #services-home .text .services a:hover {
   background: #928268;
   border-color: #928268;
 }
 
-#homepage #services .text .services a img {
+#homepage #services-home .text .services a img {
   margin-left: 10px;
 }
 
 @media screen and (max-width: 991px) {
-  #homepage #services .text .services a {
+  #homepage #services-home .text .services a {
     width: 100%;
   }
 }
